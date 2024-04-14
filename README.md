@@ -1,27 +1,44 @@
-# EcotrackFrontend
+# EcoTrack
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
+EcoTrack é uma aplicação fullstack desenvolvida para permitir o monitoramento e análise de dados ambientais em tempo real. A plataforma visa auxiliar organizações ambientais, pesquisadores e o público em geral a compreender melhor o impacto ambiental de diversas atividades e promover ações mais sustentáveis.
 
-## Development server
+## Tecnologias Utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Frontend:** Angular
+- **Backend:** NestJS
+- **Containerização:** Docker
+- **Orquestração:** Kubernetes
+- **Infraestrutura como Código:** Terraform
+- **Cloud:** AWS (Amazon Web Services)
 
-## Code scaffolding
+## Arquitetura
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+EcoTrack é composto por uma interface de usuário construída com Angular que comunica-se com uma API RESTful desenvolvida em NestJS. A aplicação é dockerizada para facilitar o deployment e é orquestrada através do Kubernetes para escalar e gerenciar os containers eficientemente. A infraestrutura necessária é provisionada automaticamente na AWS usando Terraform.
 
-## Build
+## Como Executar
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Pré-requisitos
 
-## Running unit tests
+- Node.js e npm
+- Docker
+- Kubernetes CLI (kubectl)
+- Terraform
+- AWS CLI configurada com suas credenciais
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Instruções
 
-## Running end-to-end tests
+1. **Clone o Repositório**
+   ```bash
+   git clone [URL_DO_REPOSITORIO]
+   cd ecotrack-backend
+   ```
+2. **Inicie o Frontend**
+   ```bash
+   cd ../frontend
+   npm install
+   ng serve
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## License
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+AngularJS is [MIT licensed](LICENSE).
