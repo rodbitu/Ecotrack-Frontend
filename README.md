@@ -34,11 +34,10 @@ EcoTrack é composto por uma interface de usuário construída com Angular que c
    ```
 2. **Inicie o Frontend**
    ```bash
-   cd ../frontend
    npm install
    ng serve
    ```
 
 ## License
 
-AngularJS is [MIT licensed](LICENSE).
+Angular 17.3.4 is [MIT licensed](LICENSE).
